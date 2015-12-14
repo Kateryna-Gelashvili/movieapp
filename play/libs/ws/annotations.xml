@@ -1,0 +1,5 @@
+<root>
+  <item name='play.libs.ws.WSResponse com.fasterxml.jackson.databind.JsonNode asJson()'>
+    <annotation name='org.jetbrains.annotations.Nullable'/>
+  </item>
+</root>

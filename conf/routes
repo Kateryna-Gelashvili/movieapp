@@ -1,0 +1,15 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET         /search              controllers.Assets.at(path = "/public", file = "homepage.html")
+GET         /search/:name        controllers.Application.search(name: String)
+GET         /movie/:id           controllers.Application.getMovie(id: Integer)
+POST        /addmovie            controllers.Application.addMovie()
+POST        /user                controllers.UserController.registerUser()
+POST        /login               controllers.UserController.login()
+# Map static resources from the /public folder to the /assets URL path
+GET         /assets/*file        controllers.Assets.at(path="/public", file)
+GET         /homepage            controllers.Application.index()
+GET         /                    controllers.Assets.at(path = "/public", file = "loginpage.html")

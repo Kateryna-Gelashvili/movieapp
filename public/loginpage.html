@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="userApp">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src = "assets/javascripts/angular.js" type="text/javascript"></script>
+    <script src = "assets/javascripts/userController.js" type="text/javascript"></script>
+</head>
+<body ng-controller="UserCtrl">
+<p class="container-fluid">
+    <p>Name: <input ng-model="name"></p>
+    <p>Password: <input ng-model="password" type="password"></p>
+    <p><button type="button" ng-click="reg(password,name)">Register</button>
+        <button type="button" ng-click="login(password,name)">Login</button></p>
+    <p><comment>{{message}}</comment></p>
+</div>
+</body>
+</html>
